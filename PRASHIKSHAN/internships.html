@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships - Prashiskshan</title>
+    <meta name="description" content="Browse thousands of internship opportunities from top companies. NEP 2020 compliant internships for students.">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="brand-text">
+                        <h1><a href="index.html" style="text-decoration: none; color: inherit;">PRASHISKSHAN</a></h1>
+                        <span>Academia-Industry Interface</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="internships.html">Internships <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#remote">Remote Internships</a>
+                        <a href="#part-time">Part-time</a>
+                        <a href="#full-time">Full-time</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="modules.html">Platform <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="modules.html">All Modules</a>
+                        <a href="modules.html#student">Student Portal</a>
+                        <a href="modules.html#industry">Industry Panel</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search internships, companies..." id="searchInput">
+                </div>
+            </div>
+            
+            <div class="nav-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-register">Register</button>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Internships Page Content -->
+    <main class="internships-page">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Find Your Perfect Internship</h1>
+                <p>Discover opportunities from 250+ companies across India</p>
+                
+                <!-- Filters -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Location:</label>
+                        <select id="locationFilter">
+                            <option value="">All Locations</option>
+                            <option value="remote">Work from Home</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="pune">Pune</option>
+                            <option value="hyderabad">Hyderabad</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <option value="technology">Technology</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="business">Business Development</option>
+                            <option value="design">Design</option>
+                            <option value="finance">Finance</option>
+                            <option value="hr">Human Resources</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Duration:</label>
+                        <select id="durationFilter">
+                            <option value="">Any Duration</option>
+                            <option value="1-3">1-3 months</option>
+                            <option value="3-6">3-6 months</option>
+                            <option value="6+">6+ months</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Stipend:</label>
+                        <select id="stipendFilter">
+                            <option value="">Any Stipend</option>
+                            <option value="0-10000">₹0-10,000</option>
+                            <option value="10000-25000">₹10,000-25,000</option>
+                            <option value="25000+">₹25,000+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Listings -->
+        <section class="internship-listings">
+            <div class="container">
+                <div class="results-header">
+                    <h2>Available Internships</h2>
+                    <div class="sort-options">
+                        <label>Sort by:</label>
+                        <select id="sortBy">
+                            <option value="latest">Latest</option>
+                            <option value="stipend">Highest Stipend</option>
+                            <option value="company">Company A-Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="internship-grid" id="internshipGrid">
+                    <!-- Internship cards will be populated by JavaScript -->
+                </div>
+
+                <div class="load-more">
+                    <button class="btn-load-more" id="loadMoreBtn">Load More Internships</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="container">
+                <h2 class="section-title">Why Intern with Prashiskshan?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>NEP 2025 Compliant</h3>
+                        <p>All internships are aligned with New Education Policy guidelines for academic credit</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <h3>Verified Companies</h3>
+                        <p>All our partner companies are verified and offer genuine internship opportunities</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Mentorship Support</h3>
+                        <p>Get guidance from industry experts and faculty mentors throughout your internship</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Skill Development</h3>
+                        <p>Access to skill development modules and certification programs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="brand-text">
+                                <h3>Prashiskshan</h3>
+                                <span>Academia-Industry Interface</span>
+                            </div>
+                        </div>
+                        <p>Bridging the gap between academic learning and industry requirements through innovative internship management solutions.</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="internships.html">Student Portal</a></li>
+                        <li><a href="modules.html#industry">Industry Dashboard</a></li>
+                        <li><a href="modules.html#faculty">Faculty Panel</a></li>
+                        <li><a href="modules.html#skills">Skill Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">NEP 2020 Guide</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@prashiskshan.edu.in</p>
+                        <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prashiskshan. Built for SIH 2025. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">NEP Compliance</a>
+                </div>
+            </div>
+        </div>
+         <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="brand-text">
+                        <h1><a href="index.html" style="text-decoration: none; color: inherit;">PRASHISKSHAN</a></h1>
+                        <span>Academia-Industry Interface</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="internships.html">Internships</a></div>
+                <div class="nav-item"><a href="modules.html">Platform</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+            </div>
+            <div class="nav-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-register">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="search-section">
+                <h2 class="section-title">Open Internships (Demo)</h2>
+                <div class="internship-grid" id="internshipGrid">
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Prashiskshan. Built for SIH 2025.</p>
+        </div>
+    </footer>
+
+   <script src="./script.js"></script>
+    <script src="./internships.js"></script>
+
+    
+</body>
+</html>

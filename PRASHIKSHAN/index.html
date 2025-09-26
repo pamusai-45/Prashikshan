@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashiskshan - Academia Industry Interface Platform</title>
+    <meta name="description" content="Streamline internship management, enhance student skills, and create meaningful industry partnerships with our NEP 2020 compliant platform.">
+    <meta name="author" content="Prashiskshan Team">
+    <meta name="keywords" content="internship management, NEP 2020, academia industry interface, student skills, SIH 2024">
+    <meta property="og:title" content="Prashiskshan - Academia Industry Interface Platform">
+    <meta property="og:description" content="Bridging academia and industry through innovative internship management solutions under NEP 2020.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="brand-text">
+                        <h1><a href="index.html" style="text-decoration: none; color: inherit;">PRASHISKSHAN</a></h1>
+                        <span>Academia-Industry Interface</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="internships.html">Internships <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="internships.html">Browse Internships</a>
+                        <a href="internships.html#remote">Remote Internships</a>
+                        <a href="internships.html#part-time">Part-time</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="modules.html">Platform <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="modules.html">All Modules</a>
+                        <a href="modules.html#student">Student Portal</a>
+                        <a href="modules.html#industry">Industry Panel</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            
+            <div class="nav-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-register">Register</button>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Unlock Your Future with the <span class="highlight">Right Internship</span></h1>
+                    <p>Prashiskshan bridges the gap between students and industry, offering NEP 2025 compliant internships to kickstart your career.</p>
+                    <div class="hero-buttons">
+                        <a href="internships.html" class="btn-primary"><i class="fas fa-briefcase"></i> Find an Internship</a>
+                        <a href="modules.html" class="btn-secondary"><i class="fas fa-building"></i> For Employers</a>
+                    </div>
+                    <p class="terms-text">Join thousands of students on their journey to success.</p>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-visual">
+                        <i class="fas fa-user-graduate hero-icon"></i>
+                        <i class="fas fa-lightbulb hero-icon"></i>
+                        <i class="fas fa-chart-line hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Prashiskshan?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>NEP 2025 Compliant</h3>
+                        <p>All our internships are aligned with the New Education Policy for proper academic credit and recognition.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Verified Companies</h3>
+                        <p>We partner with verified companies to ensure you get genuine and valuable internship experiences.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Skill Development</h3>
+                        <p>Access learning resources and skill modules to become industry-ready before you even start your internship.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+                        <h3>Streamlined Process</h3>
+                        <p>From application to report submission, our platform makes the entire internship process seamless and easy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <h2 class="section-title">Trending Internships</h2>
+                <div class="internship-grid" id="featuredInternships">
+                    </div>
+                <div class="view-all-section">
+                    <a href="internships.html" class="btn-view-all">View All Internships <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="brand-text">
+                                <h3>Prashiskshan</h3>
+                                <span>Academia-Industry Interface</span>
+                            </div>
+                        </div>
+                        <p>Bridging the gap between academic learning and industry requirements through innovative internship management solutions.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="internships.html">Student Portal</a></li>
+                        <li><a href="modules.html#industry">Industry Dashboard</a></li>
+                        <li><a href="modules.html#faculty">Faculty Panel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">NEP 2025 Guide</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@prashiskshan.edu.in</p>
+                        <p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prashiskshan. Built for SIH 2025. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
